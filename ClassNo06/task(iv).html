@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task</title>
+</head>
+<style>
+    body{
+        background-color: #1D3E77;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    button{
+        background-color:#E51570 ;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-color: white;
+        
+    }
+    button:hover{
+        background-color: white;
+        color: #E51570;
+        cursor: pointer;
+    }
+    .custom-checkbox{
+        appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid #5BB16F;
+        background-color: #5BB16F;
+        position: relative;
+        cursor: pointer;
+    }
+    .custom-checkbox:checked{
+        background-color: #5CB66E;
+        border-color: #5CB66E ;
+    }
+    .custom-checkbox:checked::before {
+      content: "✓"; 
+      position: absolute;
+      left: -1px;
+      top: -3px;
+      bottom: 2px;
+      right: 2px;
+      color: 1D3E77;
+      font-size: 15px;
+      
+    }
+   
+</style>
+<body>
+    <p><h1>Corporate Training <br> Made Easy <br></h1>
+    Enagaging and empowering learning thorugh technology. <br>
+Educator is the perfect theme for your Moodle LMS platform.
+<br>
+<br>
+
+    <input type="checkbox" name="" id="" class="custom-checkbox"> List item example lorem ipsum <br>
+    <input type="checkbox" name="" id="" class="custom-checkbox"> List item example lorem ipsum  <br>
+    <input type="checkbox" name="" id="" class="custom-checkbox"> List item example lorem ipsum <br>
+
+<br>
+<button>Get Started</button>
+</p>
+    
+</body>
+</html>
