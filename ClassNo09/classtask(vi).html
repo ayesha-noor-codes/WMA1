@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class task VI</title>
+</head>
+<style>
+.dropdown2 button{
+    background-color: black;
+    color: white;
+    padding: 10px 8px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown2 .content2{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+}
+
+.dropdown button{
+    background-color: black;
+    color: white;
+    padding: 10px 8px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown a{
+    display: block;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 10px 10px;
+
+}
+.dropdown .content{
+    display: none;
+    background-color: black;
+    color: white;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsl(0, 0%, 0%, 0.8);
+}
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover button{
+
+    background-color: black
+    
+}
+.dropdown a:hover{
+    background-color: white;
+    color: black;
+}
+
+    li{
+        display: inline;
+        padding: 10px;
+        margin: 5px;
+    }
+    ul{
+        background-color: black;
+        color: white;
+        padding: 10px;
+        margin: 0% auto;
+        width: 100%;
+        text-align: center;
+    }
+    li:hover{
+        background-color: grey;
+    }
+    .dropdown {
+      /* position: relative; */
+      display: inline-block;
+    }
+    
+
+</style>
+<body>
+    <ul>
+        <li><a href="#home"></a>Home</li>
+        <li><a href="#wordpress"></a>Word Press</li>
+        
+       
+    
+        <div class="dropdown">
+        <button>
+           Web Design + 
+        </button>
+           <div class="content">
+                <a href="#resources">Resource</a>
+                <a href="#links">Links</a>
+                <div class="dropdown2">
+                    <button class="tutorials">
+                        Tutorials +
+                    </button>
+                    <div class="content2">
+                        <a href="">HTML</a>
+                        <a href="">JQuery</a>
+                        <a href="">Outher+</a>
+                    </div>
+                </div>
+           </div>
+            
+            <!-- <div class="dropdown">
+                <a href="#resources">HTML/CSS</a>
+                <a href="#links">JQuery</a>
+                <a href="#Tutorials+">Outher+</a>
+            </div> -->
+        </div>
+            <!-- <select name="Web Design +" id="" > 
+            <option value="Resource">Resource</option>
+            <option value="Links">Links</option>
+            <option value="Tutorials">Tutorials</option>
+            
+        </select> -->
+   
+        <li><a href=""></a>Inspiration</li>
+         <li><a href=""></a>Contact</li>
+         <li><a href=""></a>About</li>
+    </ul>
+</body>
+</html>

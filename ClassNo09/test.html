@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Level Dropdown Navbar</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+        }
+        .nav-item {
+            position: relative;
+            padding: 10px 20px;
+            color: white;
+        }
+        .nav-item a {
+            color: white;
+            text-decoration: none;
+        }
+        .nav-item:hover {
+            background-color: #555;
+        }
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #444;
+            display: none;
+            list-style: none;
+            min-width: 150px;
+        }
+        .dropdown a {
+            display: block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .dropdown a:hover {
+            background-color: #666;
+        }
+        .nav-item:hover > .dropdown {
+            display: block;
+        }
+       
+        .sub-dropdown {
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: #555;
+            display: none;
+            min-width: 150px;
+        }
+        .dropdown-item {
+            position: relative;
+        }
+        .dropdown-item:hover > .sub-dropdown {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#home">Home</a></li>
+            <li class="nav-item"><a href="#wordpress">WordPress</a></li>
+            <li class="nav-item">WebDesign+
+                <ul class="dropdown">
+                    <li><a href="#resource">Resources</a></li>
+                    <li><a href="#links">Links</a></li>
+                    <li class="dropdown-item"><a href="#tutorials">Tutorials+</a>
+                        <ul class="sub-dropdown">
+                            <li><a href="#html/css">HTML/CSS</a></li>
+                            <li><a href="#jquery">jQuery</a></li>
+                            <li class="dropdown-item"><a href="#other">Other+</a>
+                                <ul class="sub-dropdown">
+                                    <li><a href="#stuff">Stuff</a></li>
+                                    <li><a href="#things">Things</a></li>
+                                    <li><a href="#otherstuff">Other Stuff</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#inspiration">Inspiration</a></li>
+            <li class="nav-item"><a href="#contact">Contact</a></li>
+            <li class="nav-item"><a href="#about">About</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
