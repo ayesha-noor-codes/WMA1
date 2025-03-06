@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 5</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"></head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+    
+}
+.why-choose-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+i{
+    color: #a87e4b;
+    align-self: center;
+}
+.text{
+  padding-left: 10%;
+}
+p{
+    text-align: left;
+}
+.content {
+    flex: 1;
+    padding-right: 40px;
+}
+h2 {
+    font-size: 2.5rem;
+    color: #444;
+    margin-bottom: 20px;
+    position: relative;
+}
+.underline {
+    display: inline-block;
+    width: 50px;
+    height: 3px;
+    background: #444;
+    margin-left: 10px;
+}
+p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.feature-item {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+.feature-item img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+.feature-item p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #777;
+}
+.feature-item h3 {
+    font-size: 1.2rem;
+    color: #444;
+    margin: 0;
+}
+.image-container {
+    flex: 1;
+}
+
+.image-container img {
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 992px) {
+    .why-choose-us {
+        flex-direction: column;
+        text-align: center;
+    }
+    .content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .features {
+        justify-content: center;
+    }
+
+    .feature-item {
+        width: 80%;
+    }
+}
+@media (max-width: 576px) {
+    h2 {
+        font-size: 2rem;
+    }
+    .feature-item {
+        width: 100%;
+    }
+}
+</style>
+<body>
+    <section class="why-choose-us">
+        <div class="content">
+            <h2>Why Choose Us <span class="underline"></span></h2>
+            <p>
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. 
+                Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet.
+            </p>
+
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fa-solid fa-check"></i>
+                    <div class="text">
+                        <p>Quality</p>
+                        <h3>Services</h3>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-user"></i>
+                    <div class="text">
+                        <p>Creative</p>
+                        <h3>Designers</h3>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-comments"></i>
+                    <div class="text">
+                        <p>Free</p>
+                        <h3>Consultation</h3>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-headset"></i>
+                    <div class="text">
+                        <p>Customer</p>
+                        <h3>Support</h3>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <img src="https://images.unsplash.com/photo-1619759247130-4e7a70f2fe27?q=80&w=2924&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="image">
+        </div>
+    </section>
+</body>
+
+</html>
